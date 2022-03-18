@@ -1,0 +1,33 @@
+
+    
+.cards-container
+    position: relative
+    width: 100% 
+    min-height: 50vh   
+    
+.search-div
+    max-width: 800px
+    margin: 20px auto
+
+.cards-grid
+    position: relative
+    margin: 20px auto
+    max-width: 95%
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+    grid-gap: 1rem
+@media screen and(max-width:800px)
+    .cards-grid
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+@media screen and(max-width:320px)
+    .cards-grid
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+    .search-div
+        width: 95%
+.no_resaults-div
+    max-width: 300px
+    position: absolute
+    margin-left: 50%
+    transform: translate(-50%)
+    img
+        width: 100%
