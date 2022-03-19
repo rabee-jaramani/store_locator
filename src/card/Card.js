@@ -5,13 +5,13 @@ export default function Card(props) {
   const card = props.card;
   return (
     <div className="card-container">
-      <div className="card-row">
+      {/* <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-earth-asia"></i>
         </span>
         <span className="title">Country: </span>
         <span className="content">{card.country}</span>
-      </div>
+      </div> */}
       {/* <hr /> */}
       <div className="card-row">
         <span className="icon">
@@ -21,13 +21,13 @@ export default function Card(props) {
         <span className="content">{card.city}</span>
       </div>
       {/* <hr /> */}
-      <div className="card-row">
+      {/* <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-key"></i>
         </span>
         <span className="title">Loc Key: </span>
         <span className="content">{card.loc_key}</span>
-      </div>
+      </div> */}
       {/* <hr /> */}
       <div className="card-row">
         <span className="icon">
@@ -37,29 +37,29 @@ export default function Card(props) {
         <span className="content">{card.location}</span>
       </div>
       {/* <hr /> */}
-      <div className="card-row">
+      {/* <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-bookmark"></i>
         </span>
         <span className="title">Grade: </span>
         <span className="content">{card.grade}</span>
-      </div>
+      </div> */}
       {/* <hr /> */}
-      <div className="card-row">
+      {/* <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-user-tie"></i>
         </span>
         <span className="title">Area Manager: </span>
         <span className="content">{card.area_manager}</span>
-      </div>
+      </div> */}
       {/* <hr /> */}
-      <div className="card-row">
+      {/* <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-phone"></i>
         </span>
         <span className="title">AM Contact no: </span>
         <span className="content">{card.area_manager_no}</span>
-      </div>
+      </div> */}
       {/* <hr /> */}
       <div className="card-row">
         <span className="icon">
@@ -69,20 +69,22 @@ export default function Card(props) {
         <span className="content">{card.store_no}</span>
       </div>
       {/* <hr /> */}
-      <div className="card-row">
+      {/* <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-phone"></i>
         </span>
         <span className="title">Store Manager: </span>
         <span className="content">{card.store_manager}</span>
-      </div>
+      </div> */}
       {/* <hr /> */}
       <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-phone"></i>
         </span>
-        <span className="title">SM Contact no: </span>
-        <span className="content">{card.store_manager_no}</span>
+        <span className="title">Store Manager no: </span>
+        <span className="content">
+          <a href={`tel:${card.store_manager_no}`}>{card.store_manager_no}</a>
+        </span>
       </div>
       {/* <hr /> */}
       <div className="card-row">
