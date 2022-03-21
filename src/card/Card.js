@@ -5,6 +5,7 @@ export default function Card(props) {
   const card = props.card;
   return (
     <div className="card-container">
+      <div className="corner"></div>
       <div className="card-row">
         <span className="icon">
           <i className="fa-solid fa-city"></i>
