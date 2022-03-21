@@ -11,7 +11,7 @@ export default function CardsBody() {
   // const [temp_list, setTemp_list] = useState([]);
   // Functions
   const searchHandler = (e) => {
-    setSearchPattern(e.target.value);
+    setSearchPattern(e.target.value.toLocaleLowerCase());
   };
 
   const updateList = () => {
