@@ -9,7 +9,7 @@ export default function Navbar() {
 
       <div className="apparel-link-container flex-centering">
         <a href="https://www.appareluae.com/" target="_blank" rel="noreferrer">
-          appareluae.com
+          Apparel Group
         </a>
       </div>
     </div>
