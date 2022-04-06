@@ -44,7 +44,7 @@ export default function Card(props) {
       <div className="card-row">
         <Button
           fullWidth
-          variant="contained"
+          variant="outlined"
           onClick={() => window.open(card.google_map_link)}
         >
           <i className="fa-solid fa-diamond-turn-right"></i>Directions
