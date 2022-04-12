@@ -1,30 +1,39 @@
 
 .cards-container
     position: relative
-    width: 100%
     min-height: 50vh
-
-.search-div
-    max-width: 800px
-    margin: 20px auto
-
-.cards-grid
+.cards-list-and-map
+    display: flex
+    justify-content: space-evenly
+.cards-list-container
     position: relative
-    margin: 20px auto
-    max-width: 95%
-    display: grid
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
-    grid-gap: 1rem
+    height: 500px
+    overflow-y: scroll
+    // flex-basis: 200%
+.search-div
+    position: sticky
+    top: 0
+    padding: 10px
+    background-color: #fff !important
+    z-index: 10
+
+.cards-list-container::-webkit-scrollbar
+    width: 7px
+.cards-list-container::-webkit-scrollbar-track
+    background-color: #a9baf7
+.cards-list-container::-webkit-scrollbar-thumb
+    background-color: #f9faff
+    border-radius: 6px
+    border: 1px solid #b8b8b8
+.cards-list
+    position: relative
+    display: flex
+    flex-direction: column
+    padding: 10px
+    grid-gap: 0.5rem
 @media screen and(max-width:800px)
-    .cards-grid
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
     .search-div
-        width: 80%
-@media screen and(max-width:320px)
-    .cards-grid
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
-    .search-div
-        width: 95%
+        // width: 100%
 .no_resaults-div
     max-width: 300px
     position: absolute

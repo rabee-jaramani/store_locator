@@ -1,35 +1,30 @@
 .card-container
     position: relative
-    box-shadow: 0px 1px 4px 2px #ebebeb
+    box-shadow: 0px 1px 2px 1px #ebebeb
     padding: 5px
     border-radius: 5px
     overflow: hidden
-
+    max-width: 300px
+    font-size: 0.8rem
 .card-row
     margin: 10px
     line-height: 1.4rem
     button
         background: #ffffff9f
         border: 1px solid #00000033
+        font-size: 0.7rem
 .card-row span
     margin-right: 5px
 .title
     font-weight: bold
 span i
     color: #acacac
-    font-size: 1.1rem
+    font-size: .7rem
 .fa-diamond-turn-right
     color: #000
     margin-right: 5px
 .content a
     text-decoration: underline
-
-.corner
-    width: 50%
-    height: 120%
-    position: absolute
-    right: 0
-    top: 0
-    background: #bb45411f
-    border-radius: 0 5px 0 100%
-    z-index: -100
+@media screen and (max-width: 500px)
+    .card-container
+        font-size: 0.7rem
