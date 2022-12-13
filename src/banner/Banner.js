@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImg from './bannerImage.png';
+import bannerImg from './banner-image.webp';
 
 export default function Banner() {
   return (
